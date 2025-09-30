@@ -1,33 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# E-Dash Worker - Mobile-First PWA
+
+A modern Progressive Web App built with Next.js 15, TypeScript, TailwindCSS, and shadcn/ui components for worker dashboard and Daily Progress Report (DPR) submission.
+
+## Features
+
+- **Mobile-First Design**: Responsive design optimized for mobile devices
+- **Progressive Web App**: Installable on mobile devices with offline capabilities
+- **Authentication**: Simple login system
+- **Dashboard**: KPI cards showing tasks, pending DPRs, hours logged, and team info
+- **DPR Submission**: Form with file upload and geo-coordinates
+- **History**: View all submitted DPRs with detailed information
+- **Profile**: User profile and settings management
+- **Bottom Navigation**: Easy mobile navigation with 4 tabs
+
+## Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: TailwindCSS
+- **Components**: shadcn/ui
+- **Icons**: Lucide React
+- **Forms**: React Hook Form with Zod validation
+- **PWA**: next-pwa
 
 ## Getting Started
 
-First, run the development server:
-
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+src/
+├── app/                    # Next.js App Router pages
+│   ├── dashboard/         # Dashboard page
+│   ├── submit/            # DPR submission page  
+│   ├── history/           # DPR history page
+│   ├── profile/           # Profile page
+│   └── page.tsx           # Login page (root)
+├── components/            # Reusable components
+│   ├── ui/               # shadcn/ui components
+│   └── BottomNavigation.tsx
+└── lib/                   # Utilities and data
+    ├── mock-data.ts       # Sample data for KPIs and DPRs
+    └── utils.ts           # Utility functions
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Demo Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Login**: Use any email/password combination (demo app)
+2. **Dashboard**: View KPI cards and recent activity
+3. **Submit DPR**: Fill out the form, upload a photo, and capture location
+4. **History**: View all submitted DPRs and click to see details
+5. **Profile**: View user information and logout
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## PWA Features
+
+- Installable on mobile devices
+- Offline capability (basic)
+- App-like experience with bottom navigation
+- Mobile-optimized manifest.json
 
 ## Deploy on Vercel
 
