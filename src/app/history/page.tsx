@@ -141,7 +141,7 @@ export default function HistoryPage() {
               </div>
               <h3 className="font-medium text-gray-900 mb-2">No DPRs Yet</h3>
               <p className="text-sm text-gray-500 mb-4">
-                You haven't submitted any daily progress reports yet.
+                You haven&apos;t submitted any daily progress reports yet.
               </p>
               <Button>Submit Your First DPR</Button>
             </CardContent>

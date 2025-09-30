@@ -24,7 +24,7 @@ export default function SubmitPage() {
   const [isGettingLocation, setIsGettingLocation] = useState(false);
   const router = useRouter();
 
-  const handleInputChange = (field: string, value: any) => {
+  const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({
       ...prev,
       [field]: value

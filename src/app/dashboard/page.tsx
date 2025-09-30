@@ -39,7 +39,7 @@ export default function DashboardPage() {
       <main className="max-w-md mx-auto px-4 py-6">
         {/* Quick Stats */}
         <div className="mb-6">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4">Today's Overview</h2>
+          <h2 className="text-lg font-semibold text-gray-900 mb-4">Today&apos;s Overview</h2>
           <div className="grid grid-cols-2 gap-4">
             {mockKPIs.map((kpi) => (
               <Card key={kpi.id} className="relative overflow-hidden">
